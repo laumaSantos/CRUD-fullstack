@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Container = styled.div `
+export const Container = styled.div `
     width: 100%;
     max-width: 800px;
     margin-top: 20px;
@@ -11,6 +11,6 @@ const Container = styled.div `
 
 `;
 
-const Title = styled.h2 `
+export const Title = styled.h2 `
 
 `;
