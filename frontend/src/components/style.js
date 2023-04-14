@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FormContainer = styled.form `
     display: flex;
@@ -47,4 +47,30 @@ export const Table = styled.table `
     max-width:800px;
     margin: 20px auto;
     word-break: break-all
+`
+
+export const Thead = styled.thead `
+`
+export const Tbody = styled.tbody `
+`
+
+export const Tr = styled.tr `
+`
+export const Th = styled.th `
+    text-align: start;
+    border-buttom: inset;
+    padding-buttom: 5px
+
+    @media(max-widht: 500px) {
+        ${(props) =>props.onlyWeb && "diplay:none"} 
+    }
+`
+export const Td = styled.td `
+    padding-to: 15px
+    text-align: ${(props) => (props.alignCenter ? 'center' : 'start')};
+    width: ${(props) => (props.width ? props.width : 'auto')}
+
+    @media(max-widht: 500px) {
+        ${(props) =>props.onlyWeb && "diplay:none"} 
+    }
 `
